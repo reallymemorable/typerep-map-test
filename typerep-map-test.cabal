@@ -26,7 +26,7 @@ library
   exposed-modules:     TyperepMapTest
                        
 
-  build-depends:       base ^>= 4.12.0.0
+  build-depends:       base ^>= 4.12.0.0, typerep-map, aeson
                      
 
   ghc-options:         -Wall
@@ -47,6 +47,8 @@ executable typerep-map-test
 
   build-depends:       base ^>= 4.12.0.0
                      , typerep-map-test
+                     , dependent-map
+                     , typerep-map
                      
 
   ghc-options:         -Wall
